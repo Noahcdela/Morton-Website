@@ -1,0 +1,438 @@
+@charset "UTF-8"
+
+/* 
+Color Guide
+
+48336E < Main
+9B9BBA
+534F61
+#2e2046 < Footer
+
+*/
+html,
+body {
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #534F61;
+}
+nav, .navbar, .navbar-default, .navbar-fixed-top {
+    border-bottom: none;
+    background-color: #FFF;
+    height: 70px;
+    -webkit-box-shadow: 3px 3px 50px 1px #313131;
+}
+.container-fluid .navbar-header {
+    margin-top: 12px;
+    font-weight: 700;
+}
+@media (max-width: 768px) {
+    .collapse, .navbar-collapse, #bs-example-navbar-collapse-1 {
+        margin-top: 0px;
+        text-align: center;
+        border-top: none;
+        opacity: 0.9;
+    }
+}
+.no-padding {
+    padding: 0;
+}
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #FFF;
+}
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav > li>a:focus:hover {
+    background-color: white;
+}
+.navbar-default .nav > li.active>a,
+.navbar-default .nav > li.active>a:focus,
+.navbar-default .nav > li.active>a:hover {
+    color: #48336E!important;
+    background-color: #FFF;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #313131;
+}
+button, .navbar-toggle:hover, {
+  background-color: #FFF;
+}
+
+#bs-example-navbar-collapse-1 {
+    background-color: #FFF;
+}
+.collapse, .navbar-collapse {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 700;
+}
+@media (min-width: 768px){
+    .navbar-brand {
+        display: none;
+    }
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+    }
+}
+.blurred-container{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    top: 0;
+    left: 0;
+    margin-top: 70px;
+}
+.blurred-container > .img-src {
+    position: fixed;
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.gradient--header {
+    position: fixed;
+    width: 100%;
+    height: 1000px;
+    top:0;
+    left:0;
+    margin-top: 70px;
+    z-index: 1;
+    background: -webkit-radial-gradient(circle, , transparent); 
+}
+@media (max-width: 768px) { 
+    .blurred-container > .img-src {
+        height: 700px;
+    }
+}
+.blur {
+    opacity:0;
+}
+.motto img {
+    width: 200px;
+}
+.scroll {
+    padding-top: 80px;
+    position: absolute;
+    margin-left: 80px;
+    z-index: 100;
+    color: white;
+    -webkit-animation: pleasescroll 2s infinite; /* Chrome, Safari, Opera */ 
+}
+.scroll a {
+    color: white;
+}
+@-webkit-keyframes pleasescroll {
+    0%   {padding-top: 70px}
+    100% {padding-top: 90px}
+}
+@media (max-width: 768px) {
+    .motto img {
+        margin-top: -210px;
+    }
+    .scroll {
+        display: none;
+}
+}
+.blurred-container .motto{
+    color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    margin-top: 250px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    z-index: 3;
+}
+
+/*.img-src {
+    background-image: url(../img/background-image.png);
+}*/
+/*.img-src, .blur {
+    background-image: url(../img/background-image-blur.png);
+}*/
+
+#about {
+    background-color: #534F61;
+    position: relative;
+    z-index: 100;
+    color: white;
+}
+@media (max-width: 768px) {
+    #about {
+        /* Recheck this value */
+        margin-top: -200px;
+    }
+}
+.about--header {
+    background-image: url(../img/pictures/the-morton-sisters.jpg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.about--h2 {
+    margin-top: 350px;
+    font-size: 64px;
+    color: rgba(230, 230, 230, 0.8);
+}
+@media (max-width: 768px) {
+    .about--header {
+        height: 300px;
+    }
+    .about--h2 {
+        margin-top: 150px;
+        font-size: 38px;
+    }
+}
+.profile {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    background-color: #48336E;
+    width: 50%px;
+    height: 700px; 
+}
+.profile--overlay {
+    mix-blend-mode: screen;
+    height: 100%;
+}
+.rebecca-picture {
+    background-image: url(../img/pictures/Becca.jpg);
+}
+.mookie-picture {
+    background-image: url(../img/pictures/Mookie.jpg);
+}
+.hannah-picture {
+    background-image: url(../img/pictures/Hannah.jpg);
+}
+.about--h3 {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 60px 0px 10px 70px;
+}
+#about p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+    font-size: 22px;
+    padding: 0px 70px 40px 70px;
+}
+@media (max-width: 768px) {
+    .profile {
+        height: 400px;
+    }
+    #about p {
+        font-size: 14px;
+        padding: 20px;
+    }
+    .about--h3 {
+        margin: 20px 0px 0px 20px;
+    }
+}
+#video {
+    position: relative;
+    z-index: 100;
+}
+.video--container {
+    padding: 20px 40px 20px 40px;
+}
+.video {
+    margin: 200px 0 200px 0;
+}
+@media (max-width: 768px) {
+    .video--container, .video {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+#media {
+    position: relative;
+    background-color: rgba(240, 240, 240, .8);
+    z-index: 100;
+    color: #48336E;
+}
+.media--h3 {
+    padding: 20px 0px 0px 50px;
+    font-size: 34px;
+    font-weight: 700;
+}
+.media--text {
+    padding: 0px 50px 0px 50px;
+    margin-top: 200px;
+    font-size: 42px;
+}
+@media (max-width: 768px) {
+    .media--text {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        padding: 0px;
+    }
+    .media--h3 {
+        padding-left: 30px;
+    }
+    .white-textbox {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .media--text {
+        font-size: 24px;
+        margin-top: 30px;
+        padding: 30px;
+    }
+}
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+#events {
+    position: relative;
+    z-index: 100;
+    color: white;
+    padding-bottom: 80px;
+    background-color: rgba(72, 51, 110, .8);
+}
+h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 80px 0px 30px 0px;
+}
+.events--h3 {
+    padding: none;
+    text-shadow: none;
+    font-size: 52px;
+    font-weight: 700;
+}
+.event--table, .past-events {
+    font-size: 24px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 5px solid white;
+}
+@media screen and (max-width: 768px) {
+    .event--table {
+        font-size: 14px;
+    }
+    .past-events {
+        display: none;
+    }
+}
+.event--link {
+    font-size: 14px;
+    color: rgba(250, 250, 250, 0.9);
+    text-shadow: none;
+}
+.event--link:hover {
+    color: rgb(250, 250, 250);
+    text-decoration: underline;
+}
+
+#contact {
+    position: relative;
+    z-index: 100;
+    background-color: #534F61;
+    color: white;
+    padding-bottom: 50px;
+}
+#contact a {
+    color: #FFF;
+}
+.contact--logobox {
+    margin-top: 80px;
+}
+.contact--logo {
+    width: 200px;
+}
+@media (max-width: 990px) {
+    .contact--logobox {
+        display: none;
+    }
+}
+#contact .fa {
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+    #contact {
+        text-align: center;
+    }
+    #contact .fa {
+        padding-right: 20px;
+    }
+    #contact h2 {
+        font-size: 42px;
+    }
+}
+#contact .fa:hover {
+    color: #48336E;
+    text-shadow: 0 0 100px rgba(240, 240, 240, 0.33);
+}
+.booking-link {
+    text-decoration: underline;
+}
+#footer {
+    position: relative;
+    z-index: 100;
+    background-color: #2e2046;
+    color: #7350af;
+}
+#footer p {
+    padding: 50px 0 50px 0;
+}
+#footer a {
+    color: #7350af;
+    text-decoration: none;
+}
+#footer a:hover {
+    color: #FFF;
+}
+@media (max-width: 768px) {
+    #footer {
+        padding: 30px 0 30px 0;
+    }
+    #footer p {
+        padding: 10px 0 10px 0;
+    }
+}
+::selection {
+    color: #FFF;
+    background: #48336E;
+}
